@@ -1,0 +1,11 @@
+Name,CoverLetter,Race,Gender,GPA,YearsOfExperience,ReferenceStrength,ResumeGap,University,UniversityRank,Company,Hobbies,Hometown,HometownPopulation,GPA_z,YearsOfExperience_z,ReferenceStrength_z,ResumeGap_z,UniversityRank_z,CandidateQuality,CandidateQualityNormalized
+Emily Chen,"Dear Hiring Manager,
+
+I am writing to express my interest in the consulting position at your esteemed firm. With 18 years of experience in the industry, I have honed my skills in strategic analysis and client relations, most recently at Caliber Systems, Inc. My academic background from Lehigh University, where I graduated with a GPA of 3.13, has equipped me with a solid foundation in analytical thinking and problem-solving, which I believe are essential for success in consulting.
+
+Throughout my career, I have worked on various projects that required a deep understanding of client needs and market dynamics. My ability to communicate complex ideas effectively has enabled me to foster strong relationships with clients and stakeholders alike. I am particularly drawn to this opportunity as I am eager to leverage my expertise to drive impactful solutions for your clients and contribute to their success.
+
+In addition to my professional experience, I enjoy engaging in activities such as fruit picking, water polo, and exploring linguistics, which reflect my passion for learning and teamwork. I am excited about the possibility of joining your team and am confident that my background and dedication will make a valuable contribution to your firm. Thank you for considering my application.
+
+Sincerely,
+Emily Chen",Asian,Female,3.13,18,98,0,Lehigh University,51,"Caliber Systems, Inc.","['Fruit Picking', 'Water Polo', 'Linguistics']",Los Angeles,3898747,-0.9231003353074184,0.3564828014884376,0.6022861064203126,-0.9416965821485118,-0.6258063764850913,-21.87770350737926,68.62948698817728
