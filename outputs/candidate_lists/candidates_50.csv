@@ -1,0 +1,51 @@
+Race,Gender,GPA,YearsOfExperience,ReferenceStrength,ResumeGap,University,UniversityRank,Company,Hobbies,Hometown,HometownPopulation
+American Indian or Alaska Native,Female,3.1,11,74,0,Samford University,127,"Kindred Healthcare, Inc.","['Table Tennis', 'Lotology', 'Philately']",Houston,2304580
+Native Hawaiian or Other Pacific Islander,Male,3.32,8,72,1,University of Oklahoma,127,Insight Enterprises,"['Role-Playing Games', 'Roundnet', 'Cartophily']",San Antonio,1434625
+Asian,Male,3.36,14,87,1,North Carolina State University,72,Booking Holdings,"['Magnet Fishing', 'Medical Science', 'Mahjong']",San Jose,1013240
+White,Female,2.98,27,88,0,Pepperdine University,55,Kellogg Company,"['Gymnastics', 'Mushroom Huntingmycology', 'Horseback Riding']",Indianapolis,887642
+Native Hawaiian or Other Pacific Islander,Male,3.44,10,100,0,University of Pittsburg,62,Williams,"['Auto Racing', 'Volleyball', 'Tai Chi']",New York,8804190
+White,Female,3.42,4,100,0,University of California-San Diego,34,Centex Corporation,"['Digital Hoarding', 'Amateur Geology', 'Mountaineering']",Fremont,230504
+Black or African American,Female,3.91,17,84,0,Stevens Institute of Technology,83,KeyCorp,"['Public Transport Riding', 'Stamp Collecting', 'Web Design']",Plano,285494
+American Indian or Alaska Native,Male,3.4,11,91,1,Tufts University,32,General Motors Company,"['Hobby Horsing', 'Noodling', 'Qigong']",Cincinnati,309317
+White,Male,3.19,24,98,1,University of Minnesota,62,"Harrah's Entertainment, Inc.","['Ultimate Frisbee', 'Checkers', 'Rappelling']",Columbus,905748
+Native Hawaiian or Other Pacific Islander,Male,3.1,17,94,0,Saint Louis University,105,"Cummins Engine Company, Inc.","['Dog Training', 'Cricket', 'Birdwatching']",Louisville,633045
+White,Female,3.73,28,86,1,Yale University,3,United States Steel Corporation,"['Stamp Collecting', 'Backpacking', 'Skateboarding']",Tampa,384959
+Black or African American,Female,3.95,30,78,0,University of Utah,105,Fort James Corp,"['Water Polo', 'Graffiti', 'Geography']",Oklahoma City,681054
+Native Hawaiian or Other Pacific Islander,Male,3.02,6,97,1,University of California-Los Angeles,20,"ITT Industries, Inc.","['Perfume', 'Hiking', 'Horsemanship']",Philadelphia,1603797
+Asian,Female,3.78,21,81,1,University of Denver,105,Time Warner Inc.,"['Herbalism', 'Exhibition Drill', 'Antiquing']",El Paso,678815
+White,Female,3.42,9,100,0,University of Central Florida,137,"Applied Materials, Inc.","['Mushroom Huntingmycology', 'Motor Sports', 'Powerlifting']",Stockton,320804
+Native Hawaiian or Other Pacific Islander,Male,3.69,4,91,0,University of California-Berkeley,20,American Tower,"['Air Hockey', 'Axe Throwing', 'Tether Car']",San Jose,1013240
+Black or African American,Female,3.31,11,95,0,Brandeis University,44,Auto-Owners Insurance,"['Notaphily', 'Flying', 'Table Tennis']",Glendale,248325
+American Indian or Alaska Native,Female,3.78,21,96,0,University of Pittsburg,62,Coca-Cola Enterprises Inc.,"['Fishkeeping', 'Aircraft Spotting', 'Snowmobiling']",Gilbert,267918
+Asian,Female,3.86,30,100,1,Fordham University,72,"WESCO International, Inc.","['Radio-Controlled Model Collecting', 'Trainspotting', 'People-Watching']",Irving,256684
+Asian,Male,3.84,12,73,0,Stanford University,3,The Charles Schwab Corporation,"['Axe Throwing', 'Bowling', 'Baking']",Milwaukee,577222
+White,Female,3.93,8,97,1,Santa Clara University,55,"Alcoa, Inc.","['Action Figure', 'Cooking', 'Antiquing']",Saint Paul,311527
+White,Female,3.12,14,84,0,Dartmouth College,12,"Liberty Global, Inc.","['Teaching', 'Boxing', 'Kayaking']",Dallas,1304379
+American Indian or Alaska Native,Female,3.88,11,97,1,University of Dayton,127,"Arrow Electronics, Inc","['Coin Collecting', 'Radio-Controlled Model Playing', 'History']",Atlanta,498715
+American Indian or Alaska Native,Male,3.97,14,100,0,University of Illinois-Chicago,97,General Electric Company,"['Jukskei', 'Meteorology', 'Dairy Farming']",Dallas,1304379
+Black or African American,Male,3.82,10,99,0,Marquette University,83,Coventry Health Care Inc.,"['Wrestling', 'Roundnet', 'Architecture']",Albuquerque,564559
+Native Hawaiian or Other Pacific Islander,Female,3.6,0,92,0,SUNY College of Environmental Science and Forestry,105,The Est_e Lauder Companies Inc.,"['Caving', 'Vinyl Records', 'Jujitsu']",New York,8804190
+Native Hawaiian or Other Pacific Islander,Male,3.97,1,90,1,University of California-San Diego,34,Consolidated Edison,"['Cartophily', 'Archery', 'Skiing']",El Paso,678815
+Asian,Male,3.62,21,72,1,University of Michigan-Ann Arbor,25,Tractor Supply,"['Knife Collecting', 'Picnicking', 'Ultimate Frisbee']",Philadelphia,1603797
+American Indian or Alaska Native,Female,3.95,15,94,0,Texas Christian University,89,Ameren Corporation,"['Geography', 'Crystals', 'Knife Collecting']",Omaha,486051
+White,Female,3.21,15,84,1,Saint Louis University,105,Asbury Automotive Group,"['Capoeira', 'Camping', 'Ticket Collecting']",Philadelphia,1603797
+Asian,Female,3.61,0,92,1,New York University,25,Lyondell Petrochemical Company,"['City Trip', 'Billiards', 'Dominoes']",Detroit,639111
+Black or African American,Male,2.79,29,100,0,University of Tennessee,115,Lincoln National Corporation,"['Basketball', 'Curling', 'Ice Skating']",North Las Vegas,262527
+American Indian or Alaska Native,Male,2.72,6,98,0,Princeton University,1,"Avnet, Inc.","['Cooking', 'Scuba Diving', 'Handball']",Kansas City,508090
+Black or African American,Female,3.38,17,96,0,Tufts University,32,"The Pantry, Inc.","['Dominoes', 'Gold Prospecting', 'Sand Art']",Los Angeles,3898747
+Black or African American,Female,3.93,6,100,0,Boston University,41,Regions Financial Corporation,"['Radio-Controlled Model Playing', 'Paintball', 'Flying Model Planes']",Aurora,386261
+Black or African American,Male,3.8,7,98,0,Fordham University,72,Eastman Chemical,"['Orienteering', 'Exhibition Drill', 'Birdwatching']",San Francisco,873965
+White,Male,3.22,27,91,0,Pepperdine University,55,The Walt Disney Company,"['Story Writing', 'Aerospace', 'Vegetable Farming']",Washington,689545
+White,Male,3.72,0,95,0,SUNY College of Environmental Science and Forestry,105,Asbury Automotive Group,"['Meteorology', 'Herbalism', 'Skiing']",Indianapolis,887642
+Native Hawaiian or Other Pacific Islander,Female,3.5,21,97,0,Harvard University,3,"Kelly Services, Inc.","['Cheerleading', 'Sociology', 'Amateur Geology']",Fort Wayne,263886
+White,Male,3.64,9,98,1,Brigham Young University,89,"Principal Financial Group, Inc.","['Tourism', 'Zoo Visiting', 'Longboarding']",San Diego,1386932
+Native Hawaiian or Other Pacific Islander,Male,3.4,25,76,1,Duke University,10,Goodyear Tire & Rubber,"['Taekwondo', 'Powerlifting', 'Astronomy']",Durham,283506
+Asian,Male,3.87,7,97,0,Clemson University,77,CSX Corporation,"['Beekeeping', 'Shortwave Listening', 'Teaching']",Boston,675647
+Native Hawaiian or Other Pacific Islander,Male,2.85,27,84,0,University of Georgia,49,Freddie Mac,"['Tour Skating', 'Religious Studies', 'Herping']",Jacksonville,949611
+Native Hawaiian or Other Pacific Islander,Female,3.65,8,59,1,University of California-Merced,97,"Progress Energy, Inc.","['Sports Memorabilia', 'Films', 'Topiary']",Jacksonville,949611
+Asian,Female,3.89,27,84,0,Villanova University,51,Crown Holdings,"['Karting', 'Softball', 'Hooping']",New York,8804190
+American Indian or Alaska Native,Female,3.67,28,99,1,University of Tulsa,137,Las Vegas Sands Corp.,"['Ballroom Dancing', 'Skimboarding', 'Gardening']",San Diego,1386932
+Asian,Female,3.34,7,91,1,Saint Louis University,105,Northern Trust Corporation,"['Photography', 'Animation', 'Sailing']",Dallas,1304379
+Black or African American,Female,3.2,3,71,1,Thomas Jefferson University,127,Millennium Chemicals Inc.,"['Railway Journeys', 'Longboarding', 'Taekwondo']",Houston,2304580
+White,Female,3.97,19,99,0,North Carolina State University,72,"Oneok, Inc.","['Microscopy', 'Climbing', 'Beekeeping']",Austin,961855
+Native Hawaiian or Other Pacific Islander,Female,2.73,30,98,1,Rutgers University-Newark,115,Fannie Mae,"['Mahjong', 'History', 'Parkour']",Albuquerque,564559

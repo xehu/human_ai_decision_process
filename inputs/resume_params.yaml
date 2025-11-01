@@ -1,0 +1,49 @@
+# resume_params.yaml
+# Defines allowed options and ranges for a hypothetical job candidate.
+# Fields:
+# - Race: one of the official U.S. government categories
+# - Gender: Male or Female
+# - GPA: float between 2.0 and 4.0
+# - YearsOfExperience: integer from 0 to 30
+# - ReferenceStrength: integer 0-100 (0=weak, 100=strong)
+# - ResumeGap: 0 or 1 (0=no gap, 1=gap present)
+
+race:
+  description: "Official U.S. government race categories"
+  options:
+    - "White"
+    - "Black or African American"
+    - "American Indian or Alaska Native"
+    - "Asian"
+    - "Native Hawaiian or Other Pacific Islander"
+
+gender:
+  description: "Binary gender option for this dataset"
+  options:
+    - "Male"
+    - "Female"
+
+GPA:
+  description: "Grade Point Average (2.0 - 4.0)"
+  type: float
+  min: 2.0
+  max: 4.0
+
+YearsOfExperience:
+  description: "Years of professional experience (0 - 30)"
+  type: integer
+  min: 0
+  max: 30
+
+ReferenceStrength:
+  description: "Reference strength score (0 - 100)"
+  type: integer
+  min: 0
+  max: 100
+
+ResumeGap:
+  description: "Binary indicator for a gap in resume (0 = no gap, 1 = gap present)"
+  type: integer
+  allowed_values:
+    - 0
+    - 1
