@@ -177,71 +177,104 @@ def evaluate_cover_letters_from_dir(dir_path: str, api_key: Optional[str] = None
     # Call OpenAI once with all candidates
     parsed_table = _call_openai_evaluator_bulk(candidates_list, api_key=api_key)
 
-    # Normalize parsed_table into a list of row dicts
-    rows = []
-    if isinstance(parsed_table, list):
-        rows = parsed_table
-    elif isinstance(parsed_table, dict):
-        # Try to find the actual table inside the top-level dict. Models sometimes wrap the
-        # real table under keys like 'EvaluationTable' or similar.
-        found = False
+    # Normalize parsed_table into a list of row dicts.
+    def _find_table(obj):
+        """Recursively search obj for a table-like structure and return list-of-dicts or None.
 
-        # 1) If the top-level dict is column->list (e.g., {"Name": [...], "Score": [...]}) transpose it.
-        if all(isinstance(v, list) for v in parsed_table.values()):
-            lengths = {len(v) for v in parsed_table.values()}
-            if len(lengths) == 1:
-                n = next(iter(lengths))
-                for i in range(n):
-                    r = {k: parsed_table[k][i] for k in parsed_table.keys()}
-                    rows.append(r)
-                found = True
+        Table-like structures supported:
+        - list of dicts -> returned directly
+        - dict of lists with equal lengths -> transposed into list of dicts
+        - dict of dicts where each value is a dict (mapping name->dict) -> converted to rows
+        - nested occurrences of the above anywhere in the object -> the first match is returned
+        """
+        # list of dicts
+        if isinstance(obj, list):
+            if obj and all(isinstance(x, dict) for x in obj):
+                return obj
+            # list of primitives -> convert to list of single-key dicts
+            if obj and all(not isinstance(x, (dict, list)) for x in obj):
+                return [{'value': x} for x in obj]
 
-        # 2) If any top-level value is already a list of dicts, use it.
-        if not found:
-            for v in parsed_table.values():
-                if isinstance(v, list) and v and isinstance(v[0], dict):
-                    rows = v
-                    found = True
-                    break
+        if isinstance(obj, dict):
+            # dict of lists (column -> list)
+            if obj and all(isinstance(v, list) for v in obj.values()):
+                lengths = {len(v) for v in obj.values()}
+                if len(lengths) == 1:
+                    n = next(iter(lengths))
+                    rows_local = []
+                    for i in range(n):
+                        rows_local.append({k: obj[k][i] for k in obj.keys()})
+                    return rows_local
 
-        # 2) If any top-level value is a dict of lists (column -> list), transpose it.
-        if not found:
-            for k, v in parsed_table.items():
+
+            # If some top-level value is a dict-of-lists (e.g., {'EvaluationTable': {'Name':[...], ...}}), transpose it.
+            for v in obj.values():
                 if isinstance(v, dict) and v and all(isinstance(x, list) for x in v.values()):
                     lengths = {len(x) for x in v.values()}
                     if len(lengths) == 1:
                         n = next(iter(lengths))
+                        rows_local = []
                         for i in range(n):
-                            r = {col: v[col][i] for col in v.keys()}
-                            rows.append(r)
-                        found = True
-                        break
+                            rows_local.append({k: v[k][i] for k in v.keys()})
+                        return rows_local
 
-        # 3) If any top-level value is a mapping name->dict (e.g., {"EvaluationTable": {"Alice": {...}}}),
-        #    extract that mapping.
-        if not found:
-            for k, v in parsed_table.items():
-                if isinstance(v, dict) and v and all(isinstance(x, dict) for x in v.values()):
-                    for name_key, val in v.items():
-                        r = {'Name': name_key}
-                        r.update(val)
-                        rows.append(r)
-                    found = True
+            # dict of dicts (name -> dict) or nested mapping
+            if obj and all(isinstance(v, dict) for v in obj.values()):
+                # If values are dicts mapping to primitives/lists, convert each to a row with Name
+                # e.g., {"Alice": {..}, "Bob": {..}}
+                rows_local = []
+                for k, v in obj.items():
+                    if isinstance(v, dict):
+                        r = {'Name': k}
+                        r.update(v)
+                        rows_local.append(r)
+                if rows_local:
+                    return rows_local
+
+            # Otherwise recursively search nested values
+            for v in obj.values():
+                found = _find_table(v)
+                if found:
+                    return found
+
+        return None
+
+    rows = _find_table(parsed_table)
+    if rows is None:
+        raise ValueError('Evaluator returned JSON that does not contain a table-like structure')
+
+    # If rows were found but contain wrapper columns where each cell is a mapping or a list
+    # (e.g., {'candidates': {"Alice": {...}, ...}} or {'candidates': {'Name': 'Alice', ...}}),
+    # attempt to unwrap them into the true row list.
+    if isinstance(rows, list) and rows and all(isinstance(r, dict) for r in rows):
+        # Inspect keys in the first row as candidates for wrappers
+        first = rows[0]
+        for key in list(first.keys()):
+            vals = [r.get(key) for r in rows]
+
+            # Case A: each cell is a dict that itself maps names->dicts (dict-of-dicts)
+            if all(isinstance(v, dict) for v in vals):
+                # If each dict looks like a single candidate dict (has 'Name'), then take those
+                if all(('Name' in v or 'name' in v) for v in vals):
+                    rows = [v for v in vals]
                     break
 
-        # 4) If top-level is mapping name->dict directly, use that.
-        if not found and all(isinstance(v, dict) for v in parsed_table.values()):
-            for k, v in parsed_table.items():
-                r = {'Name': k}
-                r.update(v)
-                rows.append(r)
-            found = True
+                # Otherwise, try merging these dicts (they may be fragments of a larger mapping)
+                merged = {}
+                for v in vals:
+                    for kk, vv in v.items():
+                        merged[kk] = vv
+                if merged and all(isinstance(vv, dict) for vv in merged.values()):
+                    rows = [{'Name': kk, **vv} for kk, vv in merged.items()]
+                    break
 
-        # 5) If nothing matched, treat the whole object as a single-row dict
-        if not found:
-            rows = [parsed_table]
-    else:
-        raise ValueError('Unexpected evaluator output type')
+            # Case B: each cell is a list of dicts -> concatenate
+            if all(isinstance(v, list) and v and isinstance(v[0], dict) for v in vals):
+                new_rows = []
+                for v in vals:
+                    new_rows.extend(v)
+                rows = new_rows
+                break
 
     # Ensure each row has Name and CoverLetter; if missing, assign from candidates_list by order
     for i, r in enumerate(rows):
