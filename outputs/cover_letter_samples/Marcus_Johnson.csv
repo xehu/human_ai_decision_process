@@ -1,0 +1,11 @@
+Name,CoverLetter,Race,Gender,GPA,YearsOfExperience,ReferenceStrength,ResumeGap,University,UniversityRank,Company,Hobbies,Hometown,HometownPopulation,GPA_z,YearsOfExperience_z,ReferenceStrength_z,ResumeGap_z,UniversityRank_z,CandidateQuality,CandidateQualityNormalized
+Marcus Johnson,"Dear Hiring Manager,
+
+I am writing to express my interest in the consulting position at your esteemed firm. With 26 years of experience in the industry and a proven track record of delivering strategic solutions for clients, including eBay, I am excited about the opportunity to contribute to your team. My academic background from Samford University, where I graduated with a GPA of 3.97, has equipped me with strong analytical and problem-solving skills that I have consistently applied throughout my career.
+
+My extensive experience has honed my ability to understand complex business challenges and develop tailored strategies that drive results. I am particularly drawn to this position because I am passionate about leveraging my expertise to help organizations navigate change and achieve their goals. I thrive in collaborative environments and believe my background, combined with my dedication to excellence, makes me a valuable asset to your consulting team.
+
+In addition to my professional qualifications, I have diverse interests that foster creativity and innovative thinking, such as magic and whale watching. I am eager to bring this unique perspective to your firm and contribute to impactful projects. Thank you for considering my application; I look forward to the possibility of discussing how I can help your clients succeed.
+
+Sincerely,
+Marcus Johnson",Black or African American,Male,3.97,26,98,0,Samford University,127,eBay,"['Magic', 'Digital Hoarding', 'Whale Watching']",Fort Worth,918915,1.2592928019237448,1.285428212533226,0.6022861064203126,-0.9416965821485118,1.3036575023330397,-78.60097006808371,7.794255980958368

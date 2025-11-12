@@ -1,0 +1,11 @@
+Name,CoverLetter,Race,Gender,GPA,YearsOfExperience,ReferenceStrength,ResumeGap,University,UniversityRank,Company,Hobbies,Hometown,HometownPopulation,GPA_z,YearsOfExperience_z,ReferenceStrength_z,ResumeGap_z,UniversityRank_z,CandidateQuality,CandidateQualityNormalized
+Lina Chen,"Dear Hiring Manager,
+
+I am writing to express my interest in the consulting position at your esteemed firm. With 19 years of experience in strategic consulting and a proven track record of delivering results, I have had the privilege of working with esteemed clients, including JetBlue Airways. My academic background from the University of Michigan-Ann Arbor, where I graduated with a GPA of 3.94, has equipped me with strong analytical and problem-solving skills, which I am eager to apply in a dynamic consulting environment.
+
+Throughout my career, I have focused on driving operational efficiency and developing innovative strategies that enhance client performance. I am highly motivated to join your team, where I can leverage my expertise to contribute to impactful projects and help clients navigate complex challenges. I am particularly drawn to your firm’s commitment to excellence and its collaborative culture, which aligns perfectly with my professional values.
+
+In addition to my professional experience, I am an avid participant in activities such as airsoft, field hockey, and fishing, which reflect my team-oriented mindset and strategic thinking abilities. I am excited about the opportunity to bring my unique perspective and extensive experience to your consulting team, and I look forward to the possibility of contributing to your continued success.
+
+Sincerely,
+Lina Chen",Asian,Female,3.94,19,97,1,University of Michigan-Ann Arbor,25,JetBlue Airways,"['Airsoft', 'Field Hockey', 'Fishing']",Cleveland,372624,1.181350189879774,0.4726009778690361,0.5223012317297,1.0619131671036413,-1.2858861245018205,-6.226455675352302,85.41531994780804

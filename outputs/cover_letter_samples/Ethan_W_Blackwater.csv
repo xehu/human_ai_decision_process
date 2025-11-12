@@ -1,0 +1,11 @@
+Name,CoverLetter,Race,Gender,GPA,YearsOfExperience,ReferenceStrength,ResumeGap,University,UniversityRank,Company,Hobbies,Hometown,HometownPopulation,GPA_z,YearsOfExperience_z,ReferenceStrength_z,ResumeGap_z,UniversityRank_z,CandidateQuality,CandidateQualityNormalized
+Ethan W. Blackwater,"Dear Hiring Manager,
+
+I am writing to express my interest in the consulting position at your esteemed firm. With four years of experience in the industry, I have honed my analytical and problem-solving skills through my work with 3M Company, where I successfully contributed to various projects that enhanced operational efficiency. My academic background from Clemson University, where I graduated with a GPA of 3.13, has provided me with a solid foundation in critical thinking and data analysis, which I am eager to apply in a consultancy environment.
+
+I am particularly drawn to this opportunity because I am passionate about helping organizations navigate complex challenges and achieve their strategic goals. I believe that my unique perspective as an American Indian male, along with my professional experiences, allows me to approach problems creatively and effectively. I am excited about the possibility of collaborating with a diverse team to deliver impactful solutions for clients.
+
+Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experiences align with the needs of your firm, and how I can contribute to your team’s success.
+
+Sincerely,
+Ethan W. Blackwater",American Indian or Alaska Native,Male,3.13,4,87,1,Clemson University,77,3M Company,"['Shopping', 'Perfume', 'Mycology']",Scottsdale,241361,-0.9231003353074184,-1.269171667839942,-0.2775475151764254,1.0619131671036413,0.0342733715316377,-38.462536279873824,50.84239195458915

@@ -1,0 +1,13 @@
+Name,CoverLetter,Race,Gender,GPA,YearsOfExperience,ReferenceStrength,ResumeGap,University,UniversityRank,Company,Hobbies,Hometown,HometownPopulation,GPA_z,YearsOfExperience_z,ReferenceStrength_z,ResumeGap_z,UniversityRank_z,CandidateQuality,CandidateQualityNormalized
+Alan Chen,"Dear Hiring Manager,
+
+I am writing to express my interest in the consulting position at your esteemed firm. With 27 years of experience in the industry and a proven track record of delivering exceptional results, I am excited about the opportunity to bring my expertise to your team. I am a graduate of Brandeis University, where I achieved a GPA of 3.4, graduating from a highly ranked institution that emphasizes critical thinking and analytical skills. My strong reference strength of 99 reflects my dedication and the high regard in which I am held by my peers and supervisors.
+
+Throughout my career, I have had the privilege of working with notable clients, including Freeport-McMoRan Copper & Gold Inc., where I successfully led projects that optimized operational efficiency and drove strategic growth. My experience has equipped me with a unique perspective on solving complex business challenges and developing innovative solutions tailored to client needs. I am particularly drawn to your firm’s commitment to excellence and its collaborative approach to consulting, which I believe aligns perfectly with my professional values.
+
+In addition to my professional qualifications, I am passionate about continuous learning and personal development. My hobbies, including martial arts and urban exploration, reflect my commitment to discipline and adaptability—qualities that I bring to my professional endeavors. I am eager to leverage my experience and skills to contribute meaningfully to your team and help your clients navigate their challenges successfully.
+
+Thank you for considering my application. I look forward to the opportunity to discuss how I can contribute to your organization.
+
+Sincerely,
+Alan Chen",Asian,Male,3.4,27,99,0,Brandeis University,44,Freeport-McMoRan Copper & Gold Inc.,"['Martial Arts', 'Walking', 'Urban Exploration']",Virginia Beach,459470,-0.2216168269116875,1.4015463889138244,0.6822709811109251,-0.9416965821485118,-0.8035201547972876,-19.625836511740435,71.044595587937

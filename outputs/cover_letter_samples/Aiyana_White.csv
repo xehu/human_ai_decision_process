@@ -1,0 +1,11 @@
+Name,CoverLetter,Race,Gender,GPA,YearsOfExperience,ReferenceStrength,ResumeGap,University,UniversityRank,Company,Hobbies,Hometown,HometownPopulation,GPA_z,YearsOfExperience_z,ReferenceStrength_z,ResumeGap_z,UniversityRank_z,CandidateQuality,CandidateQualityNormalized
+Aiyana White,"Dear Hiring Manager,
+
+I am writing to express my interest in the consulting position at your esteemed firm. With 12 years of experience in the field, I have had the privilege of working with diverse clients, including PPL, where I successfully led projects that enhanced operational efficiency and client satisfaction. My academic background from Florida State University, graduating with a GPA of 3.93, has provided me with a solid foundation in analytical thinking and problem-solving, essential skills for a successful consultant.
+
+I am particularly drawn to this opportunity because I am passionate about leveraging data-driven insights to solve complex business challenges. My experience in strategic consulting, combined with my strong reference strength of 96, reflects my commitment to delivering high-quality results and fostering client relationships. I am eager to contribute my expertise and innovative ideas to your team, helping clients navigate their unique challenges in today's dynamic market.
+
+In addition to my professional qualifications, I enjoy team-oriented activities such as field hockey and jukskei, which have honed my collaborative skills. I am excited about the possibility of working with your team and contributing to impactful projects that make a difference. Thank you for considering my application; I look forward to the opportunity to discuss how I can add value to your organization.
+
+Sincerely,
+Aiyana White",American Indian or Alaska Native,Female,3.93,12,96,1,Florida State University,55,PPL,"['Field Hockey', 'Jukskei', 'Fruit Picking']",Philadelphia,1603797,1.155369319198451,-0.3402262567951537,0.4423163570390875,1.0619131671036413,-0.5242556460209792,-29.567488774071432,60.38225632852401

@@ -1,0 +1,11 @@
+Name,CoverLetter,Race,Gender,GPA,YearsOfExperience,ReferenceStrength,ResumeGap,University,UniversityRank,Company,Hobbies,Hometown,HometownPopulation,GPA_z,YearsOfExperience_z,ReferenceStrength_z,ResumeGap_z,UniversityRank_z,CandidateQuality,CandidateQualityNormalized
+Kainoa Kealoha,"Dear Hiring Manager,
+
+I am writing to express my interest in the consulting position at your esteemed firm. I am a recent graduate from the University of California-Berkeley, where I achieved a GPA of 3.55, graduating from one of the top 20 universities in the nation. My academic journey has equipped me with strong analytical and problem-solving skills, which I am eager to apply in a dynamic consulting environment.
+
+During my studies, I developed a passion for understanding complex business challenges, particularly through my coursework in religious studies that enhanced my cultural awareness and adaptability. I am excited about the opportunity to contribute to your team, leveraging my strong academic background and my personal interests in travel and skateboarding to bring fresh perspectives and creativity to client projects.
+
+I am particularly drawn to this role as I aspire to help organizations like Big Lots, Inc. optimize their operations and achieve their goals. I am enthusiastic about starting my career in consulting and am committed to delivering impactful solutions for your clients. Thank you for considering my application; I look forward to the possibility of contributing to your team.
+
+Sincerely,
+Kainoa Kealoha",Native Hawaiian or Other Pacific Islander,Male,3.55,0,84,0,University of California-Berkeley,20,"Big Lots, Inc.","['Religious Studies', 'Travel', 'Skateboarding']",San Diego,1386932,0.1680962333081626,-1.7336443733623363,-0.517502139248263,-0.9416965821485118,-1.4128245375819606,-10.967269981692372,80.33083608473794

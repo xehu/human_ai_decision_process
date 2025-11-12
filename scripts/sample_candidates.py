@@ -1,5 +1,8 @@
 """sample_candidates.py
 
+How to call:
+python3 scripts/sample_candidates.py
+
 Provides:
 - sample_profile(): samples a candidate profile from `inputs/resume_params.yaml` and the input CSVs
 - generate_candidate_list(n=10): generates `n` candidates and writes them as CSV to data/candidate_lists/

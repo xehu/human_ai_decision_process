@@ -1,0 +1,11 @@
+Name,CoverLetter,Race,Gender,GPA,YearsOfExperience,ReferenceStrength,ResumeGap,University,UniversityRank,Company,Hobbies,Hometown,HometownPopulation,GPA_z,YearsOfExperience_z,ReferenceStrength_z,ResumeGap_z,UniversityRank_z,CandidateQuality,CandidateQualityNormalized
+Jennifer Smith,"Dear Hiring Manager,
+
+I am writing to express my interest in the consulting position at your esteemed company. With over 21 years of experience in the consulting field, I have had the privilege of working with renowned organizations, including Southern, where I successfully led projects that streamlined operations and enhanced client satisfaction. My academic background from Gallaudet University, where I graduated with a GPA of 3.06, has equipped me with a solid foundation in analytical thinking and problem-solving skills that I am eager to apply in a new and challenging environment.
+
+I am particularly drawn to this position because of my passion for helping organizations optimize their strategies and achieve their goals. I believe that my extensive experience, coupled with a strong reference strength of 95, allows me to contribute effectively to your team. I am excited about the opportunity to leverage my skills in a dynamic setting, where I can continue to make a meaningful impact.
+
+In addition to my professional qualifications, I am an avid table tennis player and enjoy running and collecting vinyl records in my spare time. These hobbies not only keep me active but also inspire my creative thinking and resilience in challenging situations. I look forward to the possibility of discussing how my background, skills, and interests align with the objectives of your organization.
+
+Sincerely,
+Jennifer Smith",White,Female,3.06,21,95,0,Gallaudet University,127,Southern,"['Table Tennis Playing', 'Running', 'Vinyl Records']",San Francisco,873965,-1.1049664300766815,0.7048373306302332,0.3623314823484749,-0.9416965821485118,1.3036575023330397,-75.06345797352921,11.588208242729896
